@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="input.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- NAVBAR start -->
+    <div
+      class="flex items-center justify-between h-10 text-white navbar bg-slate-900"
+    >
+      <!-- left nav div start 1-->
+      <div class="flex gap-2 ml-3">
+        <p class="text-xl">A+</p>
+        <span>|</span>
+        <p class="text-xl">A-</p>
+        <span>|</span>
+
+        <i class="text-xl fa-brands fa-twitter"></i>
+
+        <span>|</span>
+
+        <i class="text-xl fa-brands fa-square-instagram"></i>
+
+        <span>|</span>
+
+        <i class="text-xl fa-brands fa-facebook"></i>
+      </div>
+      <!-- left nav div end -->
+
+      <!-- nav-menu items DIV start  2-->
+      <div class="r hidden gap-4 mr-2 font-medium md:block">
+        <a
+          class="px-4 py-2 border border-transparent rounded hover:border-gray-500"
+          href="#"
+          >Mandatory Disclisure</a
+        >
+        <a
+          class="px-4 py-2 border border-transparent rounded hover:border-gray-500"
+          href="#"
+          >Screen Reade</a
+        >
+        <a
+          class="px-4 py-2 border border-transparent rounded hover:border-gray-500"
+          href="#"
+          >Student Corner</a
+        >
+      </div>
+
+      <!-- Menu items DIV end-->
+
+      <!--button  start 3-->
+      <button class="p-2 md:hidden menu-button" onclick="handleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <!-- button end -->
+    </div>
+    <!-- when we click munu button then open this navbar START -->
+    <div id="nav-dialog" class="fixed inset-0 hidden bg-white">
+      <div class="flex justify-end">
+        <button class="p-2 hover:text-xl" onclick="handleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="flex flex-col items-end">
+        <div class="flex flex-col gap-4 ml-4 mr-2 space-y-4 font-medium">
+          <a
+            class="px-4 py-2 bg-gray-200 border border-transparent rounded hover:border-gray-500 hover:bg-blue-700 hover:text-white"
+            href="#"
+            >Mandatory Disclisure</a
+          >
+          <a
+            class="px-4 py-2 bg-gray-200 border border-transparent rounded hover:border-gray-500 hover:bg-blue-700 hover:text-white"
+            href="#"
+            >Screen Reade</a
+          >
+          <a
+            class="px-4 py-2 bg-gray-200 border border-transparent rounded hover:border-gray-500 hover:bg-blue-700 hover:text-white"
+            href="#"
+            >Student Corner</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- when we click munu button then open this navbar END -->
+
+    <!-- NABAR end -->
+
+    <!-- main section START -->
+    <main>
+      <!-- hero-section -->
+      <div id="hero-section" class="">
+        <div class="flex items-center justify-center navbar2">
+          <div class="hidden sm:block Holker_logo">
+            <img
+              class="w-32 mx-auto img-fluid txtright"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmEvqoxvtUISGHT342GszoKi830G9lKhabA&s"
+              alt="Holkarlogo"
+            />
+          </div>
+          <div class="text-center nav2-content sm:text-xl">
+            <h1 class="font-bold text-red-600">
+              Government Holkar(Model, Autonomous) Science College, Indore(M.P.)
+            </h1>
+            <p class="font-bold text-blue-700">
+              An ISO 9001:2015 & ISO 140001:2015 Certified Institution
+            </p>
+            <p class="font-bold text-red-600">
+              (NAAC Accredited <span class="text-blue-700">"A++"</span> Grade In
+              4th Cycle)
+            </p>
+            <h2 class="font-bold text-center text-white rounded-md bg-blue-950">
+              The Legacy of
+              <span class="font-bold text-yellow-500">133</span> Year gose
+              Forward
+            </h2>
+          </div>
+          <div class="hidden sm:block logo2">
+            <img
+              class="w-36 img-fluid"
+              src="shivajirao_holkarnew.png"
+              alt="shivajirao_holakar"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main section END -->
+
+    <!-- red-navbar START -->
+
+    <nav
+      id="red-navbar"
+      class="flex  items-center h-12 px-1 mt-2 bg-red-500 red-nabar"
+    >
+      <div class="flex items-center justify-center w-full gap-5">
+        <div class="hidden xl:flex 2xl:hidden">
+          <a href="#" class="text-xl font-bold text-white">Home</a>
+          <a href="#" class="text-xl font-bold text-white">Vision & Mission</a>
+          <a href="#" class="text-xl font-bold text-white">Administration </a>
+          <a href="#" class="text-xl font-bold text-white">Examination</a>
+          <a href="#" class="text-xl font-bold text-white">IQAC (NAAC)</a>
+          <a href="#" class="text-xl font-bold text-white">NIRF</a>
+          <a href="#" class="text-xl font-bold text-white">Academics </a>
+          <a href="#" class="text-xl font-bold text-white">Syllabus</a>
+          <a href="#" class="text-xl font-bold text-white">Grievances</a>
+          <a href="#" class="text-xl font-bold text-white">Contact</a>
+        </div>
+
+        <div class="hidden gap-3 lg:flex xl:hidden">
+          <a href="#" class="text-xl font-bold text-white">Home</a>
+          <a href="#" class="text-xl font-bold text-white">Vision & Mission</a>
+          <a href="#" class="text-xl font-bold text-white">Administration </a>
+          <a href="#" class="text-xl font-bold text-white">Examination</a>
+          <a href="#" class="text-xl font-bold text-white">IQAC (NAAC)</a>
+          <a href="#" class="text-xl font-bold text-white">NIRF</a>
+          <a href="#" class="text-xl font-bold text-white">Academics </a>
+          <a href="#" class="text-xl font-bold text-white">Syllabus</a>
+          <a href="#" class="text-xl font-bold text-white">Grievances</a>
+          <!-- <a href="#" class="text-xl font-bold text-white">Contact</a> -->
+        </div>
+
+        <div class="hidden gap-5 md:flex lg:hidden">
+          <a href="#" class="text-xl font-bold text-white">Home</a>
+          <a href="#" class="text-xl font-bold text-white">Vision & Mission</a>
+          <a href="#" class="text-xl font-bold text-white">Administration </a>
+          <a href="#" class="text-xl font-bold text-white">Examination</a>
+          <a href="#" class="text-xl font-bold text-white">IQAC (NAAC)</a>
+          <a href="#" class="text-xl font-bold text-white">NIRF</a>
+          <!-- <a href="#" class="text-xl font-bold text-white">Academics </a>
+          <a href="#" class="text-xl font-bold text-white">Syllabus</a>
+          <a href="#" class="text-xl font-bold text-white">Grievances</a>
+          <a href="#" class="text-xl font-bold text-white">Contact</a> -->
+        </div>
+
+        <div class="hidden gap-5 sm:flex md:hidden">
+          <a href="#" class="text-xl font-bold text-white">Home</a>
+          <a href="#" class="text-xl font-bold text-white">Vision & Mission</a>
+          <a href="#" class="text-xl font-bold text-white">Administration </a>
+          <a href="#" class="text-xl font-bold text-white">Examination</a>
+          <!-- <a href="#" class="text-xl font-bold text-white">IQAC (NAAC)</a>
+          <a href="#" class="text-xl font-bold text-white">NIRF</a>
+          <a href="#" class="text-xl font-bold text-white">Academics </a>
+          <a href="#" class="text-xl font-bold text-white">Syllabus</a>
+          <a href="#" class="text-xl font-bold text-white">Grievances</a>
+          <a href="#" class="text-xl font-bold text-white">Contact</a> -->
+        </div>
+
+        <div class="gap-5 flex">
+          <a class="font-bold text-white sm:hidden tect-xl" href="#"> Acadmic </a>
+        <a class="font-bold text-white sm:hidden tect-xl" href="#">
+          Syllabus
+        </a>
+
+        </div>
+        <button
+          id="menu-toggle"
+          class="text-2xl text-white sm:hidden focus:outline-none"
+        >
+          <i id="menu-icon" class="fa-solid fa-bars fa-beat-fade"></i>
+        </button>
+      </div>
+    </div>
+    <ul
+      id="nav-links"
+      class="absolute left-0 hidden w-full bg-red-500 text-center mt-12 top-20"
+    >
+      <li class="py-1">
+        <a href="#" class="text-xl text-white">Vision & Mission</a>
+      </li>
+      <li class="py-1">
+        <a href="#" class="text-xl text-white">Administration </a>
+      </li>
+      <li class="py-1">
+        <a href="#" class="text-xl text-white">Examination</a>
+      </li>
+      <li class="py-1">
+        <a href="#" class="text-xl text-white">IQAC (NAAC)</a>
+      </li>
+      <li class="py-1"><a href="#" class="text-xl text-white">NIRF</a></li>
+      <li class="py-1">
+        <a href="#" class="text-xl text-white">Academics </a>
+      </li>
+      <li class="py-1">
+        <a href="#" class="text-xl text-white">Syllabus</a>
+      </li>
+      <li class="py-2"><a href="#" class="text-xl text-white">Contact</a></li>
+    </ul>
+  </nav>
+
+    <!-- red-nabar END -->
+
+    <div class="bg-slate-300">
+      <div id="holkar-college-photo " class="mx-2">
+        <img
+          class="w-fullobject-cover"
+          src="holkarImage.png"
+          alt="Holkar image"
+        />
+      </div>
+      <div class="bg-yellow-100 h-14"></div>
+    </div>
+
+    <footer class="p-6 text-yellow-400 bg-gray-900">
+      <div class="container flex flex-col justify-between mx-auto md:flex-row">
+        <!-- Left Section -->
+        <div class="mb-6 md:mb-0">
+          <h2 class="mb-2 text-lg font-bold">
+            Government Holkar (Model Autonomous) Science College, Indore (M.P.)
+          </h2>
+          <p class="text-gray-300">
+            Bhawarkuan, A.B. Road, Indore (M.P.) 452001, INDIA
+          </p>
+          <p>
+            Email:
+            <a href="mailto:principalhsc@rediffmail.com" class="hover:underline"
+              >principalhsc@rediffmail.com</a
+            >
+            (Primary)
+          </p>
+          <p>
+            Email:
+            <a href="mailto:principal@collegeholkar.org" class="hover:underline"
+              >principal@collegeholkar.org</a
+            >
+          </p>
+          <p>
+            Phone:
+            <a href="tel:+917312464111" class="hover:underline">0731-2464111</a
+            >,
+            <a href="tel:+917312764027" class="hover:underline">0731-2764027</a>
+          </p>
+        </div>
+
+        <!-- Right Section -->
+        <div>
+          <h2 class="mb-2 text-lg font-bold">Connect With Us On</h2>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:opacity-75">
+              <img
+                src="https://img.icons8.com/ios-filled/50/ffcc00/facebook--v1.png"
+                alt="Facebook"
+                class="w-6 h-6"
+              />
+            </a>
+            <a href="#" class="hover:opacity-75">
+              <img
+                src="https://img.icons8.com/ios-filled/50/ffcc00/instagram-new.png"
+                alt="Instagram"
+                class="w-6 h-6"
+              />
+            </a>
+            <a href="#" class="hover:opacity-75">
+              <img
+                src="https://img.icons8.com/ios-filled/50/ffcc00/twitter.png"
+                alt="Twitter"
+                class="w-6 h-6"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div
+        class="pt-4 mt-6 text-sm text-center text-gray-400 border-t border-gray-700"
+      >
+        <p>
+          Website Last Updated: <span class="text-yellow-400">15-12-2024</span>
+        </p>
+        <p>
+          Site best viewed in Mozilla Firefox, Google Chrome, and Microsoft
+          Internet Explorer 10 and above.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
